@@ -12,7 +12,6 @@ import pandas as pd
 import skimage
 from cnn_util import *
 
-
 def preprocess_frame(image, target_height=224, target_width=224):
 
     if len(image.shape) == 2:
@@ -36,13 +35,15 @@ def preprocess_frame(image, target_height=224, target_width=224):
         resized_image = resized_image[cropping_length:resized_image.shape[0] - cropping_length,:]
 
     return cv2.resize(resized_image, (target_height, target_width))
-
 def main():
     num_frames = 80
-    vgg_model = '/home/taeksoo/Package/caffe/models/vgg/VGG_ILSVRC_19_layers.caffemodel'
-    vgg_deploy = '/home/taeksoo/Package/caffe/models/vgg/VGG_ILSVRC_19_layers_deploy.prototxt'
-    video_path = '/media/storage3/Study/data/youtube_videos'
-    video_save_path = '/media/storage3/Study/data/youtube_feats'
+    vgg_model = '/home/supunK/GIT/caffe/models/vgg/VGG_ILSVRC_19_layers.caffemodel'
+    vgg_deploy = '/home/supunK/GIT/caffe/models/vgg/VGG_ILSVRC_19_layers_deploy.prototxt'
+    #video_path = '/media/storage3/Study/data/youtube_videos'
+    #video_save_path = '/media/storage3/Study/data/youtube_feats'
+    video_save_path = '/home/supunK/GIT/video_to_sequence/data/youtube_feats' 
+    video_path = '/home/supunK/GIT/video_to_sequence/data/youtube_videos' 
+
     videos = os.listdir(video_path)
     videos = filter(lambda x: x.endswith('avi'), videos)
 

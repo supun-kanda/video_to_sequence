@@ -4,9 +4,9 @@ import cv2
 import numpy as np
 import skimage
 
-deploy = '/home/taeksoo/Package/caffe/models/bvlc_reference_caffenet/deploy.prototxt'
-model = '/home/taeksoo/Package/caffe/models/bvlc_reference_caffenet/bvlc_reference_caffenet.caffemodel'
-mean = '/home/taeksoo/Package/caffe/python/caffe/imagenet/ilsvrc_2012_mean.npy'
+deploy = '/home/supunK/GIT/caffe/models/bvlc_reference_caffenet/deploy.prototxt'
+model = '/home/supunK/GIT/caffe/models/bvlc_reference_caffenet/bvlc_reference_caffenet.caffemodel'
+mean = '/home/supunK/GIT/caffe/python/caffe/imagenet/ilsvrc_2012_mean.npy'
 
 class CNN(object):
 

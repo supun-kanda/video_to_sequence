@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import skvideo.io
 import cv2
-import cv
+#import cv2.cv as cv
 import os
 import ipdb
 
@@ -25,6 +25,7 @@ def download_and_process_video(save_path, row):
 
     try: # 다운로드 포기
         youtube = YouTube("https://www.youtube.com/watch?v="+video_id)
+	#youtube = YouTube('http://youtube.com/watch?v='+video_id).streams.first().download(filename='tmp')
     except:
         print "다운로드 포기"
         return
@@ -38,10 +39,10 @@ def download_and_process_video(save_path, row):
     video.download('.')
 
     cap = cv2.VideoCapture( 'tmp.mp4' )
-    fps = cap.get(cv.CV_CAP_PROP_FPS)
-    fourcc = int(cap.get(cv.CV_FOURCC(*'XVID')))
-    w = int(cap.get(cv.CV_CAP_PROP_FRAME_WIDTH))
-    h = int(cap.get(cv.CV_CAP_PROP_FRAME_HEIGHT))
+    fps = cap.get(cv2.CAP_PROP_FPS)
+    fourcc = int(cap.get(cv2.VideoWriter_fourcc(*'XVID')))
+    w = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+    h = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
     out = cv2.VideoWriter( full_path, fourcc, fps, (w,h))
 
@@ -60,8 +61,8 @@ def download_and_process_video(save_path, row):
     out.release()
 
 def main():
-    video_data_path='./data/video_corpus.csv'
-    video_save_path = '/media/storage3/Study/data/youtube_videos'
+    video_data_path='data/video_corpus.csv'
+    video_save_path = 'data/youtube_videos'
 
     video_data = pd.read_csv(video_data_path, sep=',')
     video_data = video_data[video_data['Language'] == 'English']
