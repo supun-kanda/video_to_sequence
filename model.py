@@ -7,7 +7,10 @@ import ipdb
 
 import cv2
 
-from tensorflow.models.rnn import rnn_cell
+#from tensorflow.nn import rnn_cell
+#from tensorflow.models.rnn import rnn_cell
+#from tensorflow.contrib.rnn import BasicLSTMCell
+from tensorflow.contrib.rnn import rnn_cell 
 from keras.preprocessing import sequence
 
 class Video_Caption_Generator():
@@ -22,7 +25,9 @@ class Video_Caption_Generator():
             self.Wemb = tf.Variable(tf.random_uniform([n_words, dim_hidden], -0.1, 0.1), name='Wemb')
 
         self.lstm1 = rnn_cell.BasicLSTMCell(dim_hidden)
+        #self.lstm1 = BasicLSTMCell(dim_hidden)
         self.lstm2 = rnn_cell.BasicLSTMCell(dim_hidden)
+        #self.lstm2 = BasicLSTMCell(dim_hidden)
 
         self.encode_image_W = tf.Variable( tf.random_uniform([dim_image, dim_hidden], -0.1, 0.1), name='encode_image_W')
         self.encode_image_b = tf.Variable( tf.zeros([dim_hidden]), name='encode_image_b')
@@ -43,7 +48,6 @@ class Video_Caption_Generator():
         video_flat = tf.reshape(video, [-1, self.dim_image])
         image_emb = tf.nn.xw_plus_b( video_flat, self.encode_image_W, self.encode_image_b) # (batch_size*n_lstm_steps, dim_hidden)
         image_emb = tf.reshape(image_emb, [self.batch_size, self.n_lstm_steps, self.dim_hidden])
-
         state1 = tf.zeros([self.batch_size, self.lstm1.state_size])
         state2 = tf.zeros([self.batch_size, self.lstm2.state_size])
         padding = tf.zeros([self.batch_size, self.dim_hidden])
@@ -106,6 +110,7 @@ class Video_Caption_Generator():
         image_emb = tf.nn.xw_plus_b( video_flat, self.encode_image_W, self.encode_image_b)
         image_emb = tf.reshape(image_emb, [1, self.n_lstm_steps, self.dim_hidden])
 
+	
         state1 = tf.zeros([1, self.lstm1.state_size])
         state2 = tf.zeros([1, self.lstm2.state_size])
         padding = tf.zeros([1, self.dim_hidden])
@@ -152,11 +157,14 @@ class Video_Caption_Generator():
 
 
 ############### Global Parameters ###############
-video_path = '/media/storage3/Study/data/youtube_videos'
-video_data_path='./data/video_corpus.csv'
-video_feat_path = '/media/storage3/Study/data/youtube_feats'
+#video_path = '/media/storage3/Study/data/youtube_videos'
+video_path = './data/youtube_videos'
+video_path = '/mnt/data/video_sequence_damba/data/youtube_videos'
+video_data_path='/mnt/data/video_sequence_damba/data/video_corpus.csv'
+#video_feat_path = '/media/storage3/Study/data/youtube_feats'
+video_feat_path = '/mnt/data/video_sequence_damba/data/youtube_feats'
 
-vgg16_path = '/home/taeksoo/Package/tensorflow_vgg16/vgg16.tfmodel'
+vgg16_path = '/mnt/data/video_sequence_damba/data/vgg16.tfmodel'
 
 model_path = './models/'
 ############## Train Parameters #################
@@ -245,7 +253,8 @@ def train():
         np.random.shuffle(index)
         train_data = train_data.ix[index]
 
-        current_train_data = train_data.groupby('video_path').apply(lambda x: x.irow(np.random.choice(len(x))))
+        #current_train_data = train_data.groupby('video_path').apply(lambda x: x.irow(np.random.choice(len(x))))
+        current_train_data = train_data.groupby('video_path').apply(lambda x: x.iloc[np.random.choice(len(x))])
         current_train_data = current_train_data.reset_index(drop=True)
 
         for start,end in zip(
@@ -332,3 +341,5 @@ def test(model_path='models/model-900', video_feat_path=video_feat_path):
         ipdb.set_trace()
 
     ipdb.set_trace()
+
+#train()
