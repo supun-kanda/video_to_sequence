@@ -158,7 +158,7 @@ class Video_Caption_Generator():
 
 ############### Global Parameters ###############
 #video_path = '/media/storage3/Study/data/youtube_videos'
-video_path = './data/youtube_videos'
+#video_path = './data/youtube_videos'
 video_path = '/mnt/data/video_sequence_damba/data/youtube_videos'
 video_data_path='/mnt/data/video_sequence_damba/data/video_corpus.csv'
 #video_feat_path = '/media/storage3/Study/data/youtube_feats'
