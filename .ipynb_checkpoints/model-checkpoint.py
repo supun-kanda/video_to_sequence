@@ -158,12 +158,13 @@ class Video_Caption_Generator():
 
 ############### Global Parameters ###############
 #video_path = '/media/storage3/Study/data/youtube_videos'
-video_path = './data/youtube_videos'
-video_data_path='./data/video_corpus.csv'
+#video_path = './data/youtube_videos'
+video_path = '/mnt/data/video_sequence_damba/data/youtube_videos'
+video_data_path='/mnt/data/video_sequence_damba/data/video_corpus.csv'
 #video_feat_path = '/media/storage3/Study/data/youtube_feats'
-video_feat_path = './data/youtube_feats'
+video_feat_path = '/mnt/data/video_sequence_damba/data/youtube_feats'
 
-vgg16_path = './data/vgg16.tfmodel'
+vgg16_path = '/mnt/data/video_sequence_damba/data/vgg16.tfmodel'
 
 model_path = './models/'
 ############## Train Parameters #################
@@ -224,6 +225,7 @@ def preProBuildWordVocab(sentence_iterator, word_count_threshold=5): # borrowed 
     return wordtoix, ixtoword, bias_init_vector
 
 def train():
+    
     train_data, _ = get_video_data(video_data_path, video_feat_path, train_ratio=0.9)
     captions = train_data['Description'].values
     captions = map(lambda x: x.replace('.', ''), captions)
@@ -248,6 +250,7 @@ def train():
     tf.initialize_all_variables().run()
 
     for epoch in range(n_epochs):
+        print '##', epoch, '##'
         index = list(train_data.index)
         np.random.shuffle(index)
         train_data = train_data.ix[index]
@@ -272,9 +275,20 @@ def train():
                 current_feats[ind][:len(current_feats_vals[ind])] = feat
                 current_video_masks[ind][:len(current_feats_vals[ind])] = 1
 
-            current_captions = current_batch['Description'].values
-            current_caption_ind = map(lambda cap: [wordtoix[word] for word in cap.lower().split(' ')[:-1] if word in wordtoix], current_captions)
+            #current_captions = current_batch['Description'].values
+            #current_caption_ind = map(lambda cap: [wordtoix[word] for word in cap.lower().split(' ')[:-1] if word in wordtoix], current_captions)
+            #######################################################################################################################################
+            current_captions = current_batch[ 'Description' ].values
 
+            # Remove '.' and ',' from caption
+            for idx, cc in enumerate( current_captions ):
+                      current_captions[idx] = cc.replace('.', '').replace(',','')
+
+            # Remove the [:-1] in this line!
+            current_caption_ind  = map( lambda cap : [ wordtoix[word] for word in cap.lower().split(' ') if word in wordtoix], current_captions )
+            #######################################################################################################################################
+            
+            
             current_caption_matrix = sequence.pad_sequences(current_caption_ind, padding='post', maxlen=n_frame_step-1)
             current_caption_matrix = np.hstack( [current_caption_matrix, np.zeros( [len(current_caption_matrix),1]) ] ).astype(int)
             current_caption_masks = np.zeros((current_caption_matrix.shape[0], current_caption_matrix.shape[1]))
