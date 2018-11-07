@@ -41,8 +41,8 @@ def main():
     vgg_deploy = '/home/supunK/GIT/caffe/models/vgg/VGG_ILSVRC_19_layers_deploy.prototxt'
     #video_path = '/media/storage3/Study/data/youtube_videos'
     #video_save_path = '/media/storage3/Study/data/youtube_feats'
-    #video_save_path = '/home/supunK/GIT/video_to_sequence/data/youtube_feats' 
-    video_save_path = '/mnt/data/video_sequence_damba/data/youtube_feats'
+    video_save_path = '/home/supunK/GIT/video_to_sequence/data/youtube_feats' 
+    #video_save_path = '/mnt/data/video_sequence_damba/data/youtube_feats'
     #video_path = '/home/supunK/GIT/video_to_sequence/data/youtube_videos' 
     video_path = '/mnt/data/video_sequence_damba/data/youtube_videos' 
 

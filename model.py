@@ -162,7 +162,9 @@ class Video_Caption_Generator():
 video_path = '/mnt/data/video_sequence_damba/data/youtube_videos'
 video_data_path='/mnt/data/video_sequence_damba/data/video_corpus.csv'
 #video_feat_path = '/media/storage3/Study/data/youtube_feats'
-video_feat_path = '/mnt/data/video_sequence_damba/data/youtube_feats'
+video_feat_path = '/home/supunK/video_to_sequence/data/youtube_feats'
+video_feat_path = '/home/supunK/GIT/video_to_sequence/data/youtube_feats/'
+
 
 vgg16_path = '/mnt/data/video_sequence_damba/data/vgg16.tfmodel'
 
@@ -185,6 +187,7 @@ def get_video_data(video_data_path, video_feat_path, train_ratio=0.9):
     video_data = video_data[video_data['Description'].map(lambda x: isinstance(x, str))]
 
     unique_filenames = video_data['video_path'].unique()
+    #unique_filenames = video_data.unique()
     train_len = int(len(unique_filenames)*train_ratio)
 
     train_vids = unique_filenames[:train_len]
@@ -355,4 +358,4 @@ def test(model_path='models/model-900', video_feat_path=video_feat_path):
 
     ipdb.set_trace()
 
-#train()
+#train()u

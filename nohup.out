@@ -1,12 +1,12 @@
-[I 11:00:19.512 LabApp] JupyterLab extension loaded from /home/supunK/anaconda3/envs/py2/lib/python2.7/site-packages/jupyterlab
-[I 11:00:19.513 LabApp] JupyterLab application directory is /home/supunK/anaconda3/envs/py2/share/jupyter/lab
-[W 11:00:19.516 LabApp] JupyterLab server extension not enabled, manually loading...
-[I 11:00:19.516 LabApp] JupyterLab extension loaded from /home/supunK/anaconda3/envs/py2/lib/python2.7/site-packages/jupyterlab
-[I 11:00:19.516 LabApp] JupyterLab application directory is /home/supunK/anaconda3/envs/py2/share/jupyter/lab
-[I 11:00:19.519 LabApp] Serving notebooks from local directory: /home/supunK/GIT/video_to_sequence
-[I 11:00:19.519 LabApp] The Jupyter Notebook is running at:
-[I 11:00:19.519 LabApp] http://localhost:9990/
-[I 11:00:19.519 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 11:37:30.578 LabApp] JupyterLab extension loaded from /home/supunK/anaconda3/envs/seq/lib/python2.7/site-packages/jupyterlab
+[I 11:37:30.578 LabApp] JupyterLab application directory is /home/supunK/anaconda3/envs/seq/share/jupyter/lab
+[W 11:37:30.581 LabApp] JupyterLab server extension not enabled, manually loading...
+[I 11:37:30.581 LabApp] JupyterLab extension loaded from /home/supunK/anaconda3/envs/seq/lib/python2.7/site-packages/jupyterlab
+[I 11:37:30.581 LabApp] JupyterLab application directory is /home/supunK/anaconda3/envs/seq/share/jupyter/lab
+[I 11:37:30.583 LabApp] Serving notebooks from local directory: /home/supunK/GIT/video_to_sequence
+[I 11:37:30.583 LabApp] The Jupyter Notebook is running at:
+[I 11:37:30.583 LabApp] http://localhost:9990/
+[I 11:37:30.583 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
 ERROR
 
 The requested URL could not be retrieved
@@ -26,196 +26,90 @@ Your cache administrator is webmaster.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Generated Sun, 04 Nov 2018 16:00:17 GMT by cache (squid/3.5.12)
+Generated Tue, 06 Nov 2018 16:37:28 GMT by cache (squid/3.5.12)
 
-[I 11:00:26.069 LabApp] 302 GET / (::1) 0.94ms
-[W 11:00:26.759 LabApp] Could not determine jupyterlab build status without nodejs
-[I 11:00:31.936 LabApp] Kernel started: b1ae6497-eccf-4714-adb1-3f3df5d22ddf
-[I 11:00:32.337 LabApp] Adapting to protocol v5.1 for kernel b1ae6497-eccf-4714-adb1-3f3df5d22ddf
-[I 11:00:32.337 LabApp] Adapting to protocol v5.1 for kernel b1ae6497-eccf-4714-adb1-3f3df5d22ddf
-[I 11:02:31.903 LabApp] Saving file at /train.ipynb
-[I 11:04:32.071 LabApp] Saving file at /train.ipynb
-[I 11:06:32.283 LabApp] Saving file at /train.ipynb
-[I 11:08:32.443 LabApp] Saving file at /train.ipynb
-[I 11:10:32.628 LabApp] Saving file at /train.ipynb
-[I 11:12:32.800 LabApp] Saving file at /train.ipynb
-[I 11:14:33.073 LabApp] Saving file at /train.ipynb
-[I 11:16:33.275 LabApp] Saving file at /train.ipynb
-[I 11:18:33.477 LabApp] Saving file at /train.ipynb
-[I 11:20:33.648 LabApp] Saving file at /train.ipynb
-[I 11:22:33.882 LabApp] Saving file at /train.ipynb
-[I 11:24:34.035 LabApp] Saving file at /train.ipynb
-[I 11:26:34.206 LabApp] Saving file at /train.ipynb
-[I 11:28:34.395 LabApp] Saving file at /train.ipynb
-[I 11:30:34.561 LabApp] Saving file at /train.ipynb
-[I 11:32:34.783 LabApp] Saving file at /train.ipynb
-[I 11:34:34.972 LabApp] Saving file at /train.ipynb
-[I 11:36:35.164 LabApp] Saving file at /train.ipynb
-[I 11:38:35.336 LabApp] Saving file at /train.ipynb
-[I 11:40:35.523 LabApp] Saving file at /train.ipynb
-[I 11:42:35.690 LabApp] Saving file at /train.ipynb
-[I 11:44:35.850 LabApp] Saving file at /train.ipynb
-[I 11:46:36.031 LabApp] Saving file at /train.ipynb
-[I 11:48:36.200 LabApp] Saving file at /train.ipynb
-[I 11:50:36.375 LabApp] Saving file at /train.ipynb
-[I 11:52:36.519 LabApp] Saving file at /train.ipynb
-[I 11:54:36.702 LabApp] Saving file at /train.ipynb
-[I 11:56:36.903 LabApp] Saving file at /train.ipynb
-[I 11:58:37.085 LabApp] Saving file at /train.ipynb
-[I 12:00:37.252 LabApp] Saving file at /train.ipynb
-[I 12:02:37.438 LabApp] Saving file at /train.ipynb
-[I 12:04:37.602 LabApp] Saving file at /train.ipynb
-[I 12:06:37.786 LabApp] Saving file at /train.ipynb
-[I 12:08:37.970 LabApp] Saving file at /train.ipynb
-[I 12:10:38.171 LabApp] Saving file at /train.ipynb
-[I 12:12:38.362 LabApp] Saving file at /train.ipynb
-[I 12:14:38.584 LabApp] Saving file at /train.ipynb
-[I 12:16:38.774 LabApp] Saving file at /train.ipynb
-[I 12:18:38.959 LabApp] Saving file at /train.ipynb
-[I 12:20:39.135 LabApp] Saving file at /train.ipynb
-[I 12:22:39.320 LabApp] Saving file at /train.ipynb
-[I 12:24:39.514 LabApp] Saving file at /train.ipynb
-[I 12:26:39.683 LabApp] Saving file at /train.ipynb
-[I 12:28:39.861 LabApp] Saving file at /train.ipynb
-[I 12:30:40.077 LabApp] Saving file at /train.ipynb
-[I 12:32:40.266 LabApp] Saving file at /train.ipynb
-[I 12:34:40.473 LabApp] Saving file at /train.ipynb
-[I 12:36:40.638 LabApp] Saving file at /train.ipynb
-[I 12:38:40.818 LabApp] Saving file at /train.ipynb
-[I 12:40:41.034 LabApp] Saving file at /train.ipynb
-[I 12:42:41.219 LabApp] Saving file at /train.ipynb
-[I 12:44:41.392 LabApp] Saving file at /train.ipynb
-[I 12:46:41.597 LabApp] Saving file at /train.ipynb
-[I 12:48:41.783 LabApp] Saving file at /train.ipynb
-[I 12:50:41.980 LabApp] Saving file at /train.ipynb
-[I 12:52:42.165 LabApp] Saving file at /train.ipynb
-[I 12:54:42.357 LabApp] Saving file at /train.ipynb
-[I 12:56:42.554 LabApp] Saving file at /train.ipynb
-[I 12:58:42.727 LabApp] Saving file at /train.ipynb
-[I 13:00:42.902 LabApp] Saving file at /train.ipynb
-[I 13:02:43.105 LabApp] Saving file at /train.ipynb
-[I 13:04:43.307 LabApp] Saving file at /train.ipynb
-[I 13:06:43.489 LabApp] Saving file at /train.ipynb
-[I 13:08:43.700 LabApp] Saving file at /train.ipynb
-[I 13:10:43.923 LabApp] Saving file at /train.ipynb
-[I 13:12:44.096 LabApp] Saving file at /train.ipynb
-[I 13:14:44.296 LabApp] Saving file at /train.ipynb
-[I 13:16:44.511 LabApp] Saving file at /train.ipynb
-[I 13:18:44.696 LabApp] Saving file at /train.ipynb
-[I 13:20:44.921 LabApp] Saving file at /train.ipynb
-[I 13:22:45.095 LabApp] Saving file at /train.ipynb
-[I 13:24:45.284 LabApp] Saving file at /train.ipynb
-[I 13:26:45.497 LabApp] Saving file at /train.ipynb
-[I 13:28:45.700 LabApp] Saving file at /train.ipynb
-[I 13:30:45.885 LabApp] Saving file at /train.ipynb
-[I 13:32:46.071 LabApp] Saving file at /train.ipynb
-[I 13:34:46.251 LabApp] Saving file at /train.ipynb
-[I 13:36:46.447 LabApp] Saving file at /train.ipynb
-[I 13:38:46.639 LabApp] Saving file at /train.ipynb
-[I 13:40:46.816 LabApp] Saving file at /train.ipynb
-[I 13:42:47.033 LabApp] Saving file at /train.ipynb
-[I 13:44:47.221 LabApp] Saving file at /train.ipynb
-[I 13:46:47.423 LabApp] Saving file at /train.ipynb
-[I 13:48:47.609 LabApp] Saving file at /train.ipynb
-[I 13:50:47.788 LabApp] Saving file at /train.ipynb
-[I 13:52:47.962 LabApp] Saving file at /train.ipynb
-[I 13:54:48.165 LabApp] Saving file at /train.ipynb
-[I 13:56:48.353 LabApp] Saving file at /train.ipynb
-[I 13:58:48.544 LabApp] Saving file at /train.ipynb
-[I 14:00:48.719 LabApp] Saving file at /train.ipynb
-[I 14:02:48.911 LabApp] Saving file at /train.ipynb
-[I 14:04:49.107 LabApp] Saving file at /train.ipynb
-[I 14:06:49.299 LabApp] Saving file at /train.ipynb
-[I 14:08:49.500 LabApp] Saving file at /train.ipynb
-[I 14:10:49.692 LabApp] Saving file at /train.ipynb
-[I 14:12:49.893 LabApp] Saving file at /train.ipynb
-[I 14:14:50.081 LabApp] Saving file at /train.ipynb
-[I 14:16:50.268 LabApp] Saving file at /train.ipynb
-[I 14:18:50.465 LabApp] Saving file at /train.ipynb
-[I 14:20:50.648 LabApp] Saving file at /train.ipynb
-[I 14:22:50.848 LabApp] Saving file at /train.ipynb
-[I 14:24:51.039 LabApp] Saving file at /train.ipynb
-[I 14:26:51.222 LabApp] Saving file at /train.ipynb
-[I 14:28:51.416 LabApp] Saving file at /train.ipynb
-[I 14:30:51.603 LabApp] Saving file at /train.ipynb
-[I 14:32:51.804 LabApp] Saving file at /train.ipynb
-[I 14:34:52.019 LabApp] Saving file at /train.ipynb
-[I 14:36:52.201 LabApp] Saving file at /train.ipynb
-[I 14:38:52.424 LabApp] Saving file at /train.ipynb
-[I 14:40:52.622 LabApp] Saving file at /train.ipynb
-[I 14:42:52.808 LabApp] Saving file at /train.ipynb
-[I 14:44:53.021 LabApp] Saving file at /train.ipynb
-[I 14:46:53.220 LabApp] Saving file at /train.ipynb
-[I 14:48:53.427 LabApp] Saving file at /train.ipynb
-[I 14:50:53.627 LabApp] Saving file at /train.ipynb
-[I 14:52:53.821 LabApp] Saving file at /train.ipynb
-[I 14:54:54.008 LabApp] Saving file at /train.ipynb
-[I 14:56:54.208 LabApp] Saving file at /train.ipynb
-[I 14:58:54.410 LabApp] Saving file at /train.ipynb
-[I 15:00:54.627 LabApp] Saving file at /train.ipynb
-[I 15:02:54.831 LabApp] Saving file at /train.ipynb
-[I 15:04:55.027 LabApp] Saving file at /train.ipynb
-[I 15:06:55.221 LabApp] Saving file at /train.ipynb
-[I 15:08:55.409 LabApp] Saving file at /train.ipynb
-[I 15:10:55.609 LabApp] Saving file at /train.ipynb
-[I 15:12:55.797 LabApp] Saving file at /train.ipynb
-[I 15:14:55.999 LabApp] Saving file at /train.ipynb
-[I 15:16:56.192 LabApp] Saving file at /train.ipynb
-[I 15:18:56.388 LabApp] Saving file at /train.ipynb
-[I 15:20:56.557 LabApp] Saving file at /train.ipynb
-[I 15:22:56.734 LabApp] Saving file at /train.ipynb
-[I 15:24:56.945 LabApp] Saving file at /train.ipynb
-[I 15:26:57.143 LabApp] Saving file at /train.ipynb
-[I 15:28:57.331 LabApp] Saving file at /train.ipynb
-[I 15:30:57.519 LabApp] Saving file at /train.ipynb
-[I 15:32:57.716 LabApp] Saving file at /train.ipynb
-[I 15:34:57.912 LabApp] Saving file at /train.ipynb
-[I 15:36:58.109 LabApp] Saving file at /train.ipynb
-[I 15:38:58.337 LabApp] Saving file at /train.ipynb
-[I 15:40:58.538 LabApp] Saving file at /train.ipynb
-[I 15:42:58.741 LabApp] Saving file at /train.ipynb
-[I 15:44:58.943 LabApp] Saving file at /train.ipynb
-[I 15:46:59.130 LabApp] Saving file at /train.ipynb
-[I 15:48:59.366 LabApp] Saving file at /train.ipynb
-[I 15:50:59.578 LabApp] Saving file at /train.ipynb
-[I 15:52:59.786 LabApp] Saving file at /train.ipynb
-[I 15:55:00.026 LabApp] Saving file at /train.ipynb
-[I 15:57:00.219 LabApp] Saving file at /train.ipynb
-[I 15:59:00.429 LabApp] Saving file at /train.ipynb
-[I 16:01:00.630 LabApp] Saving file at /train.ipynb
-[I 16:03:00.839 LabApp] Saving file at /train.ipynb
-[I 16:05:01.054 LabApp] Saving file at /train.ipynb
-[I 16:07:01.259 LabApp] Saving file at /train.ipynb
-[I 16:09:01.455 LabApp] Saving file at /train.ipynb
-[I 16:11:01.703 LabApp] Saving file at /train.ipynb
-[I 16:13:01.906 LabApp] Saving file at /train.ipynb
-[I 16:15:02.144 LabApp] Saving file at /train.ipynb
-[I 16:17:02.333 LabApp] Saving file at /train.ipynb
-[I 16:19:02.536 LabApp] Saving file at /train.ipynb
-[I 16:21:02.732 LabApp] Saving file at /train.ipynb
-[I 16:23:02.943 LabApp] Saving file at /train.ipynb
-[I 21:36:58.729 LabApp] Saving file at /train.ipynb
+[W 11:37:44.767 LabApp] Clearing invalid/expired login cookie username-localhost-9990
+[W 11:37:44.769 LabApp] Clearing invalid/expired login cookie username-localhost-9990
+[I 11:37:44.769 LabApp] 302 GET /lab? (::1) 3.85ms
+[I 11:37:47.950 LabApp] 302 POST /login?next=%2Flab%3F (::1) 1.99ms
+[W 11:37:50.984 LabApp] Could not determine jupyterlab build status without nodejs
+[I 11:37:59.043 LabApp] Kernel started: 8157b8b3-6bf0-4814-914a-c1c3a2a44dfd
+[I 11:37:59.483 LabApp] Adapting to protocol v5.1 for kernel 8157b8b3-6bf0-4814-914a-c1c3a2a44dfd
+[I 11:37:59.483 LabApp] Adapting to protocol v5.1 for kernel 8157b8b3-6bf0-4814-914a-c1c3a2a44dfd
+[I 11:39:59.040 LabApp] Saving file at /train.ipynb
+[I 11:41:59.642 LabApp] Saving file at /train.ipynb
+[I 11:44:00.071 LabApp] Saving file at /train.ipynb
+[I 11:46:00.730 LabApp] Saving file at /train.ipynb
+[I 11:48:01.238 LabApp] Saving file at /train.ipynb
+[I 11:50:01.613 LabApp] Saving file at /train.ipynb
+[I 11:52:02.243 LabApp] Saving file at /train.ipynb
+[I 11:54:02.685 LabApp] Saving file at /train.ipynb
+[I 11:56:03.093 LabApp] Saving file at /train.ipynb
+[I 11:58:03.473 LabApp] Saving file at /train.ipynb
+[I 12:00:03.853 LabApp] Saving file at /train.ipynb
+[I 12:02:04.331 LabApp] Saving file at /train.ipynb
+[I 12:04:04.843 LabApp] Saving file at /train.ipynb
+[I 12:06:05.220 LabApp] Saving file at /train.ipynb
+[I 12:08:05.529 LabApp] Saving file at /train.ipynb
+[I 12:10:05.837 LabApp] Saving file at /train.ipynb
+[I 12:12:06.129 LabApp] Saving file at /train.ipynb
+[I 12:14:06.483 LabApp] Saving file at /train.ipynb
+[I 12:16:06.780 LabApp] Saving file at /train.ipynb
+[I 12:18:07.129 LabApp] Saving file at /train.ipynb
+[I 12:20:07.467 LabApp] Saving file at /train.ipynb
+[I 12:21:59.936 LabApp] Saving file at /train.ipynb
+[I 12:22:06.832 LabApp] Starting buffering for 8157b8b3-6bf0-4814-914a-c1c3a2a44dfd:b95b64df-cc3e-403a-84b4-da069d4e6bd4
+[I 11:32:32.094 LabApp] 302 GET / (::1) 248.38ms
+[W 11:32:32.597 LabApp] Clearing invalid/expired login cookie username-localhost-9990
+[W 11:32:32.681 LabApp] Clearing invalid/expired login cookie username-localhost-9990
+[I 11:32:32.691 LabApp] 302 GET /lab? (::1) 217.01ms
+[I 11:32:36.049 LabApp] 302 POST /login?next=%2Flab%3F (::1) 117.79ms
+[W 11:32:37.954 LabApp] Could not determine jupyterlab build status without nodejs
+[I 11:32:38.460 LabApp] Adapting to protocol v5.1 for kernel 8157b8b3-6bf0-4814-914a-c1c3a2a44dfd
+[I 11:32:38.546 LabApp] Discarding 10316 buffered messages for 8157b8b3-6bf0-4814-914a-c1c3a2a44dfd:b95b64df-cc3e-403a-84b4-da069d4e6bd4
+[I 11:32:47.145 LabApp] Adapting to protocol v5.1 for kernel 8157b8b3-6bf0-4814-914a-c1c3a2a44dfd
+[I 11:32:57.139 LabApp] Adapting to protocol v5.1 for kernel 8157b8b3-6bf0-4814-914a-c1c3a2a44dfd
+[I 11:33:01.983 LabApp] Kernel interrupted: 8157b8b3-6bf0-4814-914a-c1c3a2a44dfd
+[I 11:33:02.190 LabApp] Kernel interrupted: 8157b8b3-6bf0-4814-914a-c1c3a2a44dfd
+[I 11:33:03.176 LabApp] Kernel interrupted: 8157b8b3-6bf0-4814-914a-c1c3a2a44dfd
+[I 11:33:03.372 LabApp] Kernel interrupted: 8157b8b3-6bf0-4814-914a-c1c3a2a44dfd
+[I 11:33:06.790 LabApp] Kernel interrupted: 8157b8b3-6bf0-4814-914a-c1c3a2a44dfd
+[I 11:33:06.975 LabApp] Kernel interrupted: 8157b8b3-6bf0-4814-914a-c1c3a2a44dfd
+[I 11:33:07.176 LabApp] Kernel interrupted: 8157b8b3-6bf0-4814-914a-c1c3a2a44dfd
+[I 11:33:07.382 LabApp] Kernel interrupted: 8157b8b3-6bf0-4814-914a-c1c3a2a44dfd
+[I 11:33:07.581 LabApp] Kernel interrupted: 8157b8b3-6bf0-4814-914a-c1c3a2a44dfd
+[I 11:33:07.788 LabApp] Kernel interrupted: 8157b8b3-6bf0-4814-914a-c1c3a2a44dfd
+[I 11:33:07.997 LabApp] Kernel interrupted: 8157b8b3-6bf0-4814-914a-c1c3a2a44dfd
+[I 11:33:08.213 LabApp] Kernel interrupted: 8157b8b3-6bf0-4814-914a-c1c3a2a44dfd
+[I 11:33:08.421 LabApp] Kernel interrupted: 8157b8b3-6bf0-4814-914a-c1c3a2a44dfd
+[I 11:33:08.628 LabApp] Kernel interrupted: 8157b8b3-6bf0-4814-914a-c1c3a2a44dfd
+[I 11:33:27.545 LabApp] New terminal with automatic name: 1
+TermSocket.open: 1
+TermSocket.open: Opened 1
+[I 11:33:55.608 LabApp] Saving file at /train.ipynb
+[I 11:33:57.196 LabApp] Saving file at /train.ipynb
+[I 11:33:57.472 LabApp] Saving file at /train.ipynb
+[I 11:33:57.696 LabApp] Saving file at /train.ipynb
+[I 11:33:57.908 LabApp] Saving file at /train.ipynb
+[I 11:33:58.095 LabApp] Saving file at /train.ipynb
+[I 11:33:58.308 LabApp] Saving file at /train.ipynb
+[I 11:33:58.503 LabApp] Saving file at /train.ipynb
+[I 11:33:58.778 LabApp] Saving file at /train.ipynb
+[I 11:33:58.991 LabApp] Saving file at /train.ipynb
+[I 11:33:59.221 LabApp] Saving file at /train.ipynb
+[I 11:33:59.410 LabApp] Saving file at /train.ipynb
+E tensorflow/core/client/tensor_c_api.cc:485] Tensor name "LSTM1/BasicLSTMCell/Linear/Bias/Adam" not found in checkpoint files models/model-900
+	 [[Node: save_1/restore_slice_1 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/restore_slice_1/tensor_name, save_1/restore_slice_1/shape_and_slice)]]
 E tensorflow/core/client/tensor_c_api.cc:485] Tensor name "LSTM1/BasicLSTMCell/Linear/Bias/Adam_1" not found in checkpoint files models/model-900
-	 [[Node: save_1/restore_slice_2 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/restore_slice_2/tensor_name, save_1/restore_slice_2/shape_and_slice)]]
-[I 21:38:05.958 LabApp] Starting buffering for b1ae6497-eccf-4714-adb1-3f3df5d22ddf:2b7d9caa-3dba-49ac-8a35-c11d71a97e6a
-[I 02:19:26.720 LabApp] 302 GET / (::1) 219.45ms
-[W 02:19:28.214 LabApp] Could not determine jupyterlab build status without nodejs
-[I 02:19:28.270 LabApp] Adapting to protocol v5.1 for kernel b1ae6497-eccf-4714-adb1-3f3df5d22ddf
-[I 02:19:29.137 LabApp] Adapting to protocol v5.1 for kernel b1ae6497-eccf-4714-adb1-3f3df5d22ddf
-[I 02:20:08.784 LabApp] Starting buffering for b1ae6497-eccf-4714-adb1-3f3df5d22ddf:a52ff62b-eec8-4233-970a-88c691d68992
-[I 02:20:13.997 LabApp] Kernel restarted: b1ae6497-eccf-4714-adb1-3f3df5d22ddf
-[I 02:20:14.736 LabApp] Adapting to protocol v5.1 for kernel b1ae6497-eccf-4714-adb1-3f3df5d22ddf
-[I 02:20:14.736 LabApp] Restoring connection for b1ae6497-eccf-4714-adb1-3f3df5d22ddf:a52ff62b-eec8-4233-970a-88c691d68992
-[I 02:20:14.737 LabApp] Replaying 3 buffered messages
-[I 02:21:29.068 LabApp] Saving file at /train.ipynb
-[I 02:25:29.601 LabApp] Saving file at /train.ipynb
-[I 02:27:30.600 LabApp] Saving file at /train.ipynb
-[I 02:29:31.606 LabApp] Saving file at /train.ipynb
-[I 02:31:31.877 LabApp] Saving file at /train.ipynb
-[I 02:33:32.637 LabApp] Saving file at /train.ipynb
-[I 02:37:33.632 LabApp] Saving file at /train.ipynb
-[I 02:39:34.639 LabApp] Saving file at /train.ipynb
-[I 02:41:34.933 LabApp] Saving file at /train.ipynb
-[I 03:59:40.066 LabApp] Saving file at /train.ipynb
-[I 04:13:41.964 LabApp] Saving file at /train.ipynb
-[I 04:15:42.968 LabApp] Saving file at /train.ipynb
+	 [[Node: save_2/restore_slice_2 = RestoreSlice[dt=DT_FLOAT, preferred_shard=-1, _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_2/Const_0, save_2/restore_slice_2/tensor_name, save_2/restore_slice_2/shape_and_slice)]]
+[I 11:35:04.794 LabApp] Starting buffering for 8157b8b3-6bf0-4814-914a-c1c3a2a44dfd:f683592a-9b4e-47e4-ba98-5a603d92af24
+[I 11:35:10.090 LabApp] Kernel restarted: 8157b8b3-6bf0-4814-914a-c1c3a2a44dfd
+[I 11:35:13.769 LabApp] Adapting to protocol v5.1 for kernel 8157b8b3-6bf0-4814-914a-c1c3a2a44dfd
+[I 11:35:13.770 LabApp] Restoring connection for 8157b8b3-6bf0-4814-914a-c1c3a2a44dfd:f683592a-9b4e-47e4-ba98-5a603d92af24
+[I 11:35:13.770 LabApp] Replaying 6 buffered messages
+[I 11:35:13.796 LabApp] Adapting to protocol v5.1 for kernel 8157b8b3-6bf0-4814-914a-c1c3a2a44dfd
+[I 11:36:00.442 LabApp] Saving file at /train.ipynb
+[I 11:38:01.450 LabApp] Saving file at /train.ipynb
+[I 11:40:01.782 LabApp] Saving file at /train.ipynb
+[I 11:40:16.863 LabApp] Kernel shutdown: 8157b8b3-6bf0-4814-914a-c1c3a2a44dfd
+Websocket closed

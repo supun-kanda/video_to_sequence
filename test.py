@@ -1,5 +1,4 @@
-import pytube
-import cv2
+#import pytube
 #import caffe
 import tensorflow as tf
 #from tensorflow.models.rnn import rnn_cell
